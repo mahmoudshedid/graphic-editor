@@ -1,0 +1,7 @@
+<?php
+
+return array(
+    'jsonUrl' => 'json.php',
+    'maxGenerateShapes' => '20',
+    'imageSize' => '400',
+);
