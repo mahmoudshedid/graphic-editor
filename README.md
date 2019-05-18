@@ -20,7 +20,7 @@ If your httpdoc '/var/www/html' in another dir:
 ```bash
 sudo chcon -R --reference=/var/www/html /path/to/graphic-editor
 ```
-Rename config.php.example to config.php then open it.
+Rename config.php.example to config.php, then open it.
 ```php
 return array(
     'jsonUrl' => 'json.php', // For json url
@@ -31,6 +31,20 @@ return array(
 
 ## Usage
 Open json.php file and you will see JSON input format to receives.
+
+```json
+{
+	"shapes": [{
+		"type": "circle",
+		"perimeter": 80,
+		"fillColor": "#7766ff",
+		"border": {
+			"color": "black",
+			"width": 10
+		}
+	}]
+}
+```
 
 ## References
 [Create graphics the smart way with PHP](https://www.ibm.com/developerworks/library/os-objorient/)
