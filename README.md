@@ -14,7 +14,7 @@ chmod 777 tmp
 ```
 If you have SELinux:
 ```bash
-setsebool -P httpd_read_user_content 1
+sudo setsebool -P httpd_read_user_content 1
 ```
 If your httpdoc '/var/www/html' in another dir:
 ```bash
